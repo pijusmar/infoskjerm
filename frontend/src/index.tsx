@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AppRedirect } from './components/pages/AppRedirect';
 import { MainPage } from './components/pages/MainPage';
+import { ReklamePage } from './components/pages/ReklamePage';
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/online-appen" element={<AppRedirect />} />
+        <Route path="/reklamepage" element={<ReklamePage />} />
       </Routes>
     </Router>
   </QueryClientProvider>
